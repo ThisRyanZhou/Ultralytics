@@ -65,3 +65,6 @@ for epoch in range(epochs):
             total += labels.size(0)
             correct += (predicted == labels).sum().item()
     print(f"Validation Accuracy: {100 * correct / total:.2f}%")
+
+
+torch.save(model.state_dict(), "paper_detector.pt")
