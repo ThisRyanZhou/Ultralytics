@@ -67,4 +67,4 @@ for epoch in range(epochs):
     print(f"Validation Accuracy: {100 * correct / total:.2f}%")
 
 
-torch.save(model.state_dict(), "paper_detector.pt")
+torch.save(model.state_dict(), "letterDetector.pt")
